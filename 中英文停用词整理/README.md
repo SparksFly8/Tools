@@ -8,3 +8,4 @@ with open(filePath, 'r', encoding='utf-8') as f:
     textlist = text.split(';\n')
     zn_STOPWORDS = set(textlist)
 ```
+本文共收录了1880个包含常用的停用词和中文标点符号。
