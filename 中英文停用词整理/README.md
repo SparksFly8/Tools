@@ -1,2 +1,9 @@
-# Tools
-本仓库用于放置一些开发用到的工具包
+# 使用方法
+1.点击`Raw``可在浏览器看见原生文本内容，然后右键“另存为”到本地。
+2.在Python中获取该文本后使用`split(';\n')``分离，即可得到含有每个停用词的列表，最后转化为**集合set**即可直接使用。
+```js
+with open(filePath, 'r', encoding='utf-8') as f:
+    text = f.read()
+    textlist = text.split(';\n')
+    zn_STOPWORDS = set(textlist)
+```
